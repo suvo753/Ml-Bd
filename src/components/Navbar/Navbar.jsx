@@ -1,29 +1,29 @@
 const Navbar = () => {
     return (
-       <div className="navbar">
+       <div className="flex justify-between mt-2.5 mx-10">
       <div className="navbar-start">
         <div className="flex items-center gap-1 font-bold text-xl">
           <img className="w-10 animate-pulse" src="/src/assets/logo.png" /> Ai Hub
         </div>
       </div>
-      <div className="navbar-center hidden md:flex">
-        <ul className="menu menu-horizontal gap-10 px-1 text-lg">
+      <div className=" hidden md:flex">
+        <ul className="flex gap-8 text-xl cursor-pointer ">
           <li>
-            <a>Home</a>
+            <a className="hover:text-red-500">Home</a>
           </li>
           <li>
-            <a>About</a>
+            <a className="hover:text-red-500">About</a>
           </li>
           <li>
-            <a>Services</a>
+            <a className="hover:text-red-500">Services</a>
           </li>
           <li>
-            <a>Contact</a>
+            <a className="hover:text-red-500">Contact</a>
           </li>
         </ul>
       </div>
-      <div className="navbar-end gap-5">
-        <a className="btn bg-red-500 rounded-full text-white">Get in Touch</a>
+      <div className="">
+        <a className=" bg-red-500 px-4 py-2 rounded-full text-white">Get in Touch</a>
       </div>
     </div>
     );
